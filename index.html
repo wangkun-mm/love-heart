@@ -46,10 +46,23 @@
         transform: scale(1) rotate(-45deg);
       }
     }
+
+    .text-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(45deg);
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      z-index: 10;
+    }
   </style>
 </head>
 <body class="flex items-center justify-center min-h-screen bg-gradient-to-r from-pink-400 to-red-500">
-  <div class="heart"></div>
+  <div class="heart">
+    <span class="text-overlay">苗苗</span>
+  </div>
 </body>
 </html>
-
